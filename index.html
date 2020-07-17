@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcokme To Our Payoneer Bank</title>
+    <!--    google font area start-->
+    <!--    google font area end-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<div id="login-area">
+    <h1 class="text-center">Welcome To Payoneer Bank</h1>
+    <div class="submit-area">
+        <h4>Login</h4>
+        <input type="text" placeholder="Email" class="form-control">
+        <input type="password" placeholder="Password" class="form-control">
+        <button id="login" class="btn btn-success">Enter</button>
+    </div>
+</div>
+<!-- transaction area -->
+<div id="transaction-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$ <span id="currentDeposit">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$ <span class="withdrawAmount">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>$ <span id="currentBalance">1240</span> </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pus-area">
+                    <h2>Deposit</h2>
+                    <input type="text" id="depositAmount" class="form-control" placeholder="$amount you want to deposit">
+                    <br>
+                    <button class="btn btn-success" id="addMoney">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="pus-area">
+
+                    <h2>Withdraw</h2>
+                    <input type="text" id="amountWithdraw" class="form-control" placeholder="$amount you want to Withdraw">
+                    <br>
+                    <button class="btn btn-success" id="deletMoney">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
